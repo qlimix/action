@@ -1,0 +1,39 @@
+{
+    "name": "qlimix/action",
+    "type": "library",
+    "license": "LGPL-3.0-only",
+    "authors": [
+        {
+            "name": "Frank",
+            "email": "frank@qlimix.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Qlimix\\Action\\": "src/"
+        }
+    },
+    "require": {
+        "psr/http-server-middleware": "^1.0",
+        "qlimix/http": "dev-master",
+        "qlimix/router": "dev-master"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@bitbucket.org:qlimix/codesniffer-standard.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@bitbucket.org:qlimix/code-standard.git"
+        }
+    ],
+    "require-dev": {
+        "qlimix/code-standard": "dev-master"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

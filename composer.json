@@ -13,11 +13,6 @@
             "Qlimix\\Action\\": "src/"
         }
     },
-    "require": {
-        "psr/http-server-middleware": "^1.0",
-        "qlimix/http": "dev-master",
-        "qlimix/router": "dev-master"
-    },
     "config": {
         "sort-packages": true
     },

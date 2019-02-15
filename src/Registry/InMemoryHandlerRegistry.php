@@ -13,7 +13,7 @@ final class InMemoryHandlerRegistry implements HandlerRegistryInterface, Handler
     /**
      * @inheritDoc
      */
-    public function register(string $handler, string $messageName, string $method = 'execute'): void
+    public function register(string $handler, string $messageName, string $method = 'handle'): void
     {
         $this->handlers[$messageName] = new Handler($handler, $method);
     }

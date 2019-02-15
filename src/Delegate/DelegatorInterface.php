@@ -4,7 +4,7 @@ namespace Qlimix\Action\Delegate;
 
 use Qlimix\Action\Delegate\Exception\DelegateException;
 
-interface DelegateInterface
+interface DelegatorInterface
 {
     /**
      * @return mixed

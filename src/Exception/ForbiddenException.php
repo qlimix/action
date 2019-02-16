@@ -2,8 +2,6 @@
 
 namespace Qlimix\Action\Exception;
 
-use Exception;
-
-final class ForbiddenException extends Exception
+final class ForbiddenException extends ActionException
 {
 }

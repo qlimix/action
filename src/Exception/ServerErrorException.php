@@ -2,8 +2,6 @@
 
 namespace Qlimix\Action\Exception;
 
-use Exception;
-
-final class ServerErrorException extends Exception
+final class ServerErrorException extends ActionException
 {
 }

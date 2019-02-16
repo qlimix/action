@@ -2,6 +2,8 @@
 
 namespace Qlimix\Action\Exception;
 
-final class NotFoundException extends ActionException
+use Exception;
+
+class ActionException extends Exception
 {
 }

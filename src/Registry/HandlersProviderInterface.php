@@ -10,5 +10,5 @@ interface HandlersProviderInterface
     /**
      * @throws HandlerProviderException
      */
-    public function find(string $messageName): Handler;
+    public function find(string $actionName): Handler;
 }

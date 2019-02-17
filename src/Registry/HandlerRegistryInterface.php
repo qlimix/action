@@ -4,5 +4,5 @@ namespace Qlimix\Action\Registry;
 
 interface HandlerRegistryInterface
 {
-    public function register(string $handler, string $messageName, string $method = 'handle'): void;
+    public function register(string $handler, string $actionName, string $method = 'handle'): void;
 }

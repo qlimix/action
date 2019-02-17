@@ -13,20 +13,20 @@ final class InMemoryHandlerRegistry implements HandlerRegistryInterface, Handler
     /**
      * @inheritDoc
      */
-    public function register(string $handler, string $messageName, string $method = 'handle'): void
+    public function register(string $handler, string $actionName, string $method = 'handle'): void
     {
-        $this->handlers[$messageName] = new Handler($handler, $method);
+        $this->handlers[$actionName] = new Handler($handler, $method);
     }
 
     /**
      * @inheritDoc
      */
-    public function find(string $messageName): Handler
+    public function find(string $actionName): Handler
     {
-        if (!empty($this->handlers[$messageName])) {
-            return $this->handlers[$messageName];
+        if (!empty($this->handlers[$actionName])) {
+            return $this->handlers[$actionName];
         }
 
-        throw new HandlerProviderException('Could not match '.$messageName);
+        throw new HandlerProviderException('Could not match '.$actionName);
     }
 }

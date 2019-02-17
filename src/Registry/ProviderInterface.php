@@ -4,5 +4,5 @@ namespace Qlimix\Action\Registry;
 
 interface ProviderInterface
 {
-    public function provide(HandlerRegistryInterface $registry): void;
+    public function provide(HandlerConnectorInterface $connector): void;
 }

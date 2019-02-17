@@ -5,7 +5,7 @@ namespace Qlimix\Action\Registry;
 use Qlimix\Action\Registry\Dto\Handler;
 use Qlimix\Action\Registry\Exception\HandlerProviderException;
 
-final class InMemoryHandlerRegistry implements HandlerRegistryInterface, HandlersProviderInterface
+final class InMemoryHandlerConnector implements HandlerConnectorInterface, HandlersProviderInterface
 {
     /** @var Handler[] */
     private $handlers = [];
@@ -13,7 +13,7 @@ final class InMemoryHandlerRegistry implements HandlerRegistryInterface, Handler
     /**
      * @inheritDoc
      */
-    public function register(string $handler, string $actionName, string $method = 'handle'): void
+    public function link(string $handler, string $actionName, string $method = 'handle'): void
     {
         $this->handlers[$actionName] = new Handler($handler, $method);
     }

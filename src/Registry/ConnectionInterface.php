@@ -2,7 +2,7 @@
 
 namespace Qlimix\Action\Registry;
 
-interface ConnectInterface
+interface ConnectionInterface
 {
     public function connect(HandlerConnectorInterface $connector): void;
 }

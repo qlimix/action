@@ -5,7 +5,7 @@ namespace Qlimix\Action\Registry;
 use Qlimix\Action\Registry\Dto\Handler;
 use Qlimix\Action\Registry\Exception\HandlerProviderException;
 
-interface HandlersProviderInterface
+interface HandlerProviderInterface
 {
     /**
      * @throws HandlerProviderException

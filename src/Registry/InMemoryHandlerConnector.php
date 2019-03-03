@@ -5,7 +5,7 @@ namespace Qlimix\Action\Registry;
 use Qlimix\Action\Registry\Dto\Handler;
 use Qlimix\Action\Registry\Exception\HandlerProviderException;
 
-final class InMemoryHandlerConnector implements HandlerConnectorInterface, HandlersProviderInterface
+final class InMemoryHandlerConnector implements HandlerConnectorInterface, HandlerProviderInterface
 {
     /** @var Handler[] */
     private $handlers = [];

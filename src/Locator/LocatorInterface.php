@@ -2,13 +2,12 @@
 
 namespace Qlimix\Action\Locator;
 
-use Qlimix\Action\Locator\Dto\ExecutableHandler;
 use Qlimix\Action\Locator\Exception\LocatorException;
 
-interface HandlerLocatorInterface
+interface LocatorInterface
 {
     /**
      * @throws LocatorException
      */
-    public function locate(string $messageId): ExecutableHandler;
+    public function locate(string $actionId): object;
 }

@@ -13,5 +13,5 @@ interface DelegatorInterface
      * @throws ActionException
      * @throws DelegateException
      */
-    public function handle(object $action);
+    public function delegate(object $action);
 }

@@ -2,7 +2,7 @@
 
 namespace Qlimix\Action\Registry;
 
-final class ActionConnector
+final class Connector
 {
     /** @var ConnectionInterface[] */
     private $connections;

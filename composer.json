@@ -1,13 +1,20 @@
 {
     "name": "qlimix/action",
     "type": "library",
-    "license": "LGPL-3.0-only",
+    "description": "Mapping actions to an action resolver",
+    "license": "MIT",
     "authors": [
         {
             "name": "Frank",
             "email": "frank@qlimix.net"
         }
     ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "qlimix/code-standard": "^2.0"
+    },
     "autoload": {
         "psr-4": {
             "Qlimix\\Action\\": "src/"
@@ -15,20 +22,5 @@
     },
     "config": {
         "sort-packages": true
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@bitbucket.org:qlimix/codesniffer-standard.git"
-        },
-        {
-            "type": "vcs",
-            "url": "git@bitbucket.org:qlimix/code-standard.git"
-        }
-    ],
-    "require-dev": {
-        "qlimix/code-standard": "dev-master"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }

@@ -5,7 +5,7 @@ namespace Qlimix\Action\Registry;
 final class Connector
 {
     /** @var ConnectionInterface[] */
-    private $connections;
+    private array $connections;
 
     /**
      * @param ConnectionInterface[] $connections

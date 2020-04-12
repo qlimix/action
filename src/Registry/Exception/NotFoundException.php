@@ -4,6 +4,6 @@ namespace Qlimix\Action\Registry\Exception;
 
 use Exception;
 
-final class HandlerProviderException extends Exception
+final class NotFoundException extends Exception
 {
 }

@@ -4,5 +4,5 @@ namespace Qlimix\Action\Registry;
 
 interface HandlerConnectorInterface
 {
-    public function link(string $handler, string $actionName, string $method = 'handle'): void;
+    public function link(string $handler, string $actionName, string $method = 'resolve'): void;
 }

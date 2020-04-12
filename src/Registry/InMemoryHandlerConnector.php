@@ -3,17 +3,17 @@
 namespace Qlimix\Action\Registry;
 
 use Qlimix\Action\Registry\Dto\Handler;
-use Qlimix\Action\Registry\Exception\HandlerProviderException;
+use Qlimix\Action\Registry\Exception\NotFoundException;
 
 final class InMemoryHandlerConnector implements HandlerConnectorInterface, HandlerProviderInterface
 {
     /** @var Handler[] */
-    private $handlers = [];
+    private array $handlers = [];
 
     /**
      * @inheritDoc
      */
-    public function link(string $handler, string $actionName, string $method = 'handle'): void
+    public function link(string $handler, string $actionName, string $method = 'resolve'): void
     {
         $this->handlers[$actionName] = new Handler($handler, $method);
     }
@@ -27,6 +27,6 @@ final class InMemoryHandlerConnector implements HandlerConnectorInterface, Handl
             return $this->handlers[$actionName];
         }
 
-        throw new HandlerProviderException('Could not match '.$actionName);
+        throw new NotFoundException('Could not match '.$actionName);
     }
 }
